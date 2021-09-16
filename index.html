@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap&subset;=vietnamese" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <nav class="header__navbar">
+                    <ul class="header__navbar__list">
+                        <li class="navbar__list__item navbar__list__item--separate navbar__list__item--QR">Vào cửa hàng trên ứng dụng F8-shop
+                            <!-- QR code -->
+                            <div class="list__item__qrCode">
+                                <img src="./assets/img/qr_code.png" alt="QR code" class="item__qrCode__img">
+                                <div class="item__qrCode__apps">
+                                    <img src="./assets/img/google_play.png" alt="" class="qrCode__apps__download">
+                                    <img src="./assets/img/app_store.png" alt="" class="qrCode__apps__download">
+                                </div>
+                            </div>
+                            <!-- QR code -->
+                        </li>
+                        <li class="navbar__list__item">
+                            <span class="list__item__title">Kết nối</span>
+                            <a href="" class="list__item__link1">
+                                <i class="fab fa-facebook item__link1__icon"></i>
+                            </a>
+                            <a href="" class="list__item__link1">
+                                <i class="fab fa-instagram item__link1__icon"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="header__navbar__list">
+                        <li class="navbar__list__item navbar__list__item--notify a">
+                            <a href="" class="list__item__link1">
+                                <i class="far fa-bell item__link1__icon"></i> Thông báo</a>
+                            <!-- notify -->
+                            <div class="list__item__notify">
+                                <h3 class="item_notify_header">Thông báo mới</h3>
+                                <ul class="item__notify__list">
+                                    <li class="notify__list__item notify__list__item--viewed">
+                                        <a href="" class="list__item__link2">
+                                            <img src="https://cf.shopee.vn/file/6730987c2b48de9046bff76b102956a3" alt="" class="item__link2__img">
+                                            <div class="item__link2__info">
+                                                <p class="link2__info__name">Áo sơ mi Azizah (LD 96, P 70) / KM Shinta PJ / Kem / Áo sơ mi</p>
+                                                <p class="link2__info__description">The color is appropriate. Please understand if there is a color that is not appropriate in the photo</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="notify__list__item ">
+                                        <a href="" class="list__item__link2">
+                                            <img src="https://cf.shopee.vn/file/6730987c2b48de9046bff76b102956a3" alt="" class="item__link2__img">
+                                            <div class="item__link2__info">
+                                                <p class="link2__info__name">Mỹ phẩm Ohui chính hãng</p>
+                                                <p class="link2__info__description">Mô tả mỹ phẩm Ohui chính hãng</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="notify__list__item notify__list__item--viewed">
+                                        <a href="" class="list__item__link2">
+                                            <img src="https://cf.shopee.vn/file/6730987c2b48de9046bff76b102956a3" alt="" class="item__link2__img">
+                                            <div class="item__link2__info">
+                                                <p class="link2__info__name">Mỹ phẩm Ohui chính hãng</p>
+                                                <p class="link2__info__description">Mô tả mỹ phẩm Ohui chính hãng</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="item__notify__footer">
+                                    <a href="" class="notify__footer__btn">Xem tất cả</a>
+                                </footer>
+                            </div>
+                            <!-- notify -->
+                        </li>
+                        <li class="navbar__list__item">
+                            <a href="" class="list__item__link1">
+                                <i class="fas fa-question-circle item__link1__icon"></i> Trợ giúp</a>
+                        </li>
+
+                        <!-- <li class="navbar__list__item navbar__list__item--strong navbar__list__item--separate">Đăng kí</li>
+                        <li class="navbar__list__item navbar__list__item--strong">Đăng nhập</li> -->
+                        <li class="navbar__list__item navbar__list__item-user">
+                            <img class="list__item__avt" src="./assets/img/user.png" alt="">
+                            <span class="list__item__name">Phan Đôn</span>
+                            <ul class="list__item-user__menu">
+                                <li class="item-user__menu__item">
+                                    <a href="">Tài khoản của tôi</a>
+                                </li>
+                                <li class="item-user__menu__item">
+                                    <a href="">Địa chỉ của tôi</a>
+                                </li>
+                                <li class="item-user__menu__item">
+                                    <a href="">Đơn mua</a>
+                                </li>
+                                <li class="item-user__menu__item">
+                                    <a href="">Đăng xuất</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- header with search -->
+                <div class="header__second-nav">
+                    <div class="header__logo">
+                        <img class="header__logo__img" src="./assets/img/f8_text_logo.png" alt="">
+                    </div>
+                    <div class="header__search">
+                        <div class="header__search__input-wrap">
+                            <input type="text" class="header__search__input" placeholder="Nhập để tìm kiếm">
+                            <!-- search history -->
+                            <div class="header__search__history">
+                                <h3 class="search__history__header">Lịch sử tìm kiếm</h3>
+                                <ul class="search__history__list">
+                                    <li class="history__list__item">
+                                        <a class="list__item__link3" href="">Kem dưỡng da</a>
+                                    </li>
+                                    <li class="history__list__item">
+                                        <a class="list__item__link3" href="">Kem trị mụn</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- search history -->
+                        </div>
+                        <div class="header__search__option">
+                            <div class="search__option__select">
+                                <span class="option__select__text">Trong shop</span>
+                                <i class="fas fa-chevron-down option__select__icon"></i>
+                            </div>
+                            <ul class="search__option__list">
+                                <li class="option__list__item option__list__item--active">
+                                    <span>Trong shop</span>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                                <li class="option__list__item">
+                                    <span>Ngoài shop</span>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="header__search__btn">
+                            <i class="fas fa-search search__btn__icon"></i>
+                        </button>
+                    </div>
+                    <div class="header__cart">
+                        <div class="header__cart__wrap">
+                            <i class="fas fa-cart-plus header__cart__icon"></i>
+                            <span class="header__cart__quantity">3</span>
+                            <!-- class="header__cart__list--empty" -->
+                            <div class="header__cart__list header__cart__list--filled">
+                                <img src="./assets/img/empty_cart.png" alt="" class="cart__list__empty-img">
+                                <span class="cart__list__empty-msg">Chưa có sản phẩm</span>
+                                <!-- class="header__cart__list--filled" -->
+                                <h3 class="cart__list__heading">Sản phẩm đã thêm</h3>
+                                <ul class="cart__list-child">
+                                    <li class="list-child__item">
+                                        <img src="./assets/img/product/bo-nuoc-sua-duong-trang-da-ohui-e1612160913931-510x501.jpg" alt="" class="list-child__item__img">
+                                        <div class="list-child__item__info">
+                                            <div class="item__info__header">
+                                                <h4 class="info__header__name">Bộ sữa dưỡng trắng da ohui</h4>
+                                                <div class="info__header__wrap">
+                                                    <span class="info__header__price">1.600.000đ</span>
+                                                    <span class="info__header__multify">x</span>
+                                                    <span class="info__header__quantity">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="item__info__body">
+                                                <div class="info__body__wrap">
+                                                    <span class="info__body__type">Phân loại hàng:</span>
+                                                    <span class="info__body__description">Bạc</span>
+                                                </div>
+                                                <span class="info__body__remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-child__item">
+                                        <img src="./assets/img/product/mat-na-3d-ohui-white-black-mask-e1622281548854-510x510.jpg" alt="" class="list-child__item__img">
+                                        <div class="list-child__item__info">
+                                            <div class="item__info__header">
+                                                <h4 class="info__header__name">Mặt nạ 3d ohui white black mask</h4>
+                                                <div class="info__header__wrap">
+                                                    <span class="info__header__price">1.600.000đ</span>
+                                                    <span class="info__header__multify">x</span>
+                                                    <span class="info__header__quantity">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="item__info__body">
+                                                <div class="info__body__wrap">
+                                                    <span class="info__body__type">Phân loại hàng:</span>
+                                                    <span class="info__body__description">Bạc</span>
+                                                </div>
+                                                <span class="info__body__remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-child__item">
+                                        <img src="./assets/img/product/set-kem-vld-2sp-e1626602555770-510x510.jpg" alt="" class="list-child__item__img">
+                                        <div class="list-child__item__info">
+                                            <div class="item__info__header">
+                                                <h4 class="info__header__name">Set Kem Dưỡng Trắng Da VDL Lumilaver Cream 50ml</h4>
+                                                <div class="info__header__wrap">
+                                                    <span class="info__header__price">1.600.000đ</span>
+                                                    <span class="info__header__multify">x</span>
+                                                    <span class="info__header__quantity">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="item__info__body">
+                                                <div class="info__body__wrap">
+                                                    <span class="info__body__type">Phân loại hàng:</span>
+                                                    <span class="info__body__description">Bạc</span>
+                                                </div>
+                                                <span class="info__body__remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-child__item">
+                                        <img src="./assets/img/product/bo-nuoc-sua-duong-trang-da-ohui-e1612160913931-510x501.jpg" alt="" class="list-child__item__img">
+                                        <div class="list-child__item__info">
+                                            <div class="item__info__header">
+                                                <h4 class="info__header__name">Bộ sữa dưỡng trắng da ohui</h4>
+                                                <div class="info__header__wrap">
+                                                    <span class="info__header__price">1.600.000đ</span>
+                                                    <span class="info__header__multify">x</span>
+                                                    <span class="info__header__quantity">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="item__info__body">
+                                                <div class="info__body__wrap">
+                                                    <span class="info__body__type">Phân loại hàng:</span>
+                                                    <span class="info__body__description">Bạc</span>
+                                                </div>
+                                                <span class="info__body__remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-child__item">
+                                        <img src="./assets/img/product/mat-na-3d-ohui-white-black-mask-e1622281548854-510x510.jpg" alt="" class="list-child__item__img">
+                                        <div class="list-child__item__info">
+                                            <div class="item__info__header">
+                                                <h4 class="info__header__name">Mặt nạ 3d ohui white black mask</h4>
+                                                <div class="info__header__wrap">
+                                                    <span class="info__header__price">1.600.000đ</span>
+                                                    <span class="info__header__multify">x</span>
+                                                    <span class="info__header__quantity">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="item__info__body">
+                                                <div class="info__body__wrap">
+                                                    <span class="info__body__type">Phân loại hàng:</span>
+                                                    <span class="info__body__description">Bạc</span>
+                                                </div>
+                                                <span class="info__body__remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-child__item">
+                                        <img src="./assets/img/product/set-kem-vld-2sp-e1626602555770-510x510.jpg" alt="" class="list-child__item__img">
+                                        <div class="list-child__item__info">
+                                            <div class="item__info__header">
+                                                <h4 class="info__header__name">Set Kem Dưỡng Trắng Da VDL Lumilaver Cream 50ml Set Kem Dưỡng Trắng Da VDL Lumilaver Cream 50ml</h4>
+                                                <div class="info__header__wrap">
+                                                    <span class="info__header__price">1.600.000đ</span>
+                                                    <span class="info__header__multify">x</span>
+                                                    <span class="info__header__quantity">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="item__info__body">
+                                                <div class="info__body__wrap">
+                                                    <span class="info__body__type">Phân loại hàng:</span>
+                                                    <span class="info__body__description">Bạc</span>
+                                                </div>
+                                                <span class="info__body__remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <a href="" class=" cart__list__view btn btn--primary">Xem giỏ hàng</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- header with search -->
+            </div>
+        </header>
+        <div class="container">
+            <div class="grid">
+                <div class="grid__row container__body">
+                    <div class="grid__column-2">
+                        <nav class="category">
+                            <h3 class="category__header">
+                                <i class="fas fa-list category__header__icon"></i> Danh mục</h3>
+                            <ul class="category__list">
+                                <li class="category__list__item">
+                                    <a href="" class="list__item__link4 list__item__link4--current">Trang điểm mặt</a>
+                                </li>
+                                <li class="category__list__item">
+                                    <a href="" class="list__item__link4">Trang điểm môi</a>
+                                </li>
+                                <li class="category__list__item">
+                                    <a href="" class="list__item__link4">Trang điểm mắt</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="grid__column-10">
+                        <div class="filter">
+                            <div class="filter-wrap">
+                                <span class="fillter__label">Sắp xếp theo</span>
+                                <button class="btn btn--white filter-wrap__btn">Phổ biến</button>
+                                <button class="btn btn--primary filter-wrap__btn">Mới nhất</button>
+                                <button class="btn btn--white filter-wrap__btn">Bán chạy</button>
+                                <div class="filter__option">
+                                    <span class="option__text">Giá</span>
+                                    <i class="fas fa-chevron-down option__icon"></i>
+                                    <ul class="option__list">
+                                        <li class="option__list__item"><a href="" class="list__item__link">Từ thấp đến cao</a></li>
+                                        <li class="option__list__item"><a href="" class="list__item__link">Từ cao đến thấp</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="filter__page-wrap">
+                                <span class="page__current">1</span>/
+                                <span class="page__total">14</span>
+                                <div class="page__next-page">
+                                    <a href="" class="next-page__btn next-page__btn--left"><i class="fas fa-chevron-left option__select__icon"></i></a>
+                                    <a href="" class="next-page__btn next-page__btn--right"><i class="fas fa-chevron-right option__select__icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="grid__row">
+                                <!-- product -->
+                                <div class="grid__column-2_10">
+                                    <a class="product__item" href="">
+                                        <div class="product__item__favourite">
+                                            <i class="fas fa-check item__favourite__icon"></i>
+                                            <span class="item__favourite__label">Yêu thích</span>
+                                        </div>
+                                        <div class="product__item__sale-off">
+                                            <span class="item__sale-off__percent">10%</span>
+                                            <span class="item__sale-off__label">GIẢM</span>
+                                        </div>
+                                        <div class="product__item__img" style="background-image: url('./assets/img/product/b1ecae4a02c99e4e4ae62021040513593424.jpg')"></div>
+                                        <h4 class="product__item__name">Bộ dưỡng 6 món giảm nếp nhăn ngăn ngừa lão hóa OHUI Age Recovery Essance 3pcs Set</h4>
+                                        <div class="product__item__price">
+                                            <span class="item__price__old">1.200.000đ</span>
+                                            <span class="item__price__current">999.00000đ</span>
+                                        </div>
+                                        <div class="product__item__action">
+                                            <div class="item__action__icon item__action__icon--liked">
+                                                <i class="fas fa-heart item__action--fill"></i>
+                                                <i class="far fa-heart item__action--empty"></i>
+                                            </div>
+                                            <div class="product__item__rate">
+                                                <i class="fas fa-star item__rate--gold"></i>
+                                                <i class="fas fa-star item__rate--gold"></i>
+                                                <i class="fas fa-star item__rate--gold"></i>
+                                                <i class="fas fa-star item__rate--gold"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="product__item__sold">88 đã bán</span>
+                                        </div>
+                                        <div class="product__item__origin">
+                                            <span class="item__origin__brand">Whoo</span>
+                                            <span class="item__origin__nation">Japan</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2_10">
+                                    <a class="product__item" href="">
+                                        <div class="product__item__favourite">
+                                            <i class="fas fa-check item__favourite__icon"></i>
+                                            <span class="item__favourite__label">Yêu thích</span>
+                                        </div>
+                                        <div class="product__item__sale-off">
+                                            <span class="item__sale-off__percent">10%</span>
+                                            <span class="item__sale-off__label">GIẢM</span>
+                                        </div>
+                                        <div class="product__item__img" style="background-image: url('./assets/img/product/b1ecae4a02c99e4e4ae62021040513593424.jpg')"></div>
+                                        <h4 class="product__item__name">Bộ dưỡng 6 món giảm nếp nhăn ngăn ngừa lão hóa OHUI Age Recovery Essance 3pcs Set</h4>
+                                        <div class="product__item__price">
+                                            <span class="item__price__old">1.200.000đ</span>
+                                            <span class="item__price__current">999.00000đ</span>
+                                        </div>
+                                        <div class="product__item__action">
+                                            <div class="item__action__icon item__action__icon--liked">
+                                                <i class="fas fa-heart item__action--fill"></i>
+                                                <i class="far fa-heart item__action--empty"></i>
+                                            </div>
+                                            <div class="product__item__rate">
+                                                <i class="fas fa-star item__rate--gold"></i>
+                                                <i class="fas fa-star item__rate--gold"></i>
+                                                <i class="fas fa-star item__rate--gold"></i>
+                                                <i class="fas fa-star item__rate--gold"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="product__item__sold">88 đã bán</span>
+                                        </div>
+                                        <div class="product__item__origin">
+                                            <span class="item__origin__brand">Whoo</span>
+                                            <span class="item__origin__nation">Japan</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2_10">
+                                    <a class="product__item" href="">
+                                        <div class="product__item__favourite">
+                                            <i class="fas fa-check item__favourite__icon"></i>
+                                            <span class="item__favourite__label">Yêu thích</span>
+                                        </div>
+                                        <div class="product__item__sale-off">
+                                            <span class="item__sale-off__percent">10%</span>
+                                            <span class="item__sale-off__label">GIẢM</span>
+                                        </div>
+                                        <div class="product__item__img" style="background-image: url('./assets/img/product/b1ecae4a02c99e4e4ae62021040513593424.jpg')"></div>
+                                        <h4 class="product__item__name">Bộ dưỡng 6 món giảm nếp nhăn ngăn ngừa lão hóa OHUI Age Recovery Essance 3pcs Set</h4>
+                                        <div class="product__item__price">
+                                            <span class="item__price__old">1.200.000đ</span>
+                                            <span class="item__price__current">999.00000đ</span>
+                                        </div>
+                                        <div class="product__item__action">
+                                            <div class="item__action__icon item__action__icon--liked">
+                                                <i class="fas fa-heart item__action--fill"></i>
+                                                <i class="far fa-heart item__action--empty"></i>
+                                            </div>
+                                            <div class="product__item__rate">
+                                                <i class="fas fa-star item__rate--gold"></i>
+                                                <i class="fas fa-star item__rate--gold"></i>
+                                                <i class="fas fa-star item__rate--gold"></i>
+                                                <i class="fas fa-star item__rate--gold"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="product__item__sold">88 đã bán</span>
+                                        </div>
+                                        <div class="product__item__origin">
+                                            <span class="item__origin__brand">Whoo</span>
+                                            <span class="item__origin__nation">Japan</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2_10">
+                                    <a class="product__item" href="">
+                                        <div class="product__item__favourite">
+                                            <i class="fas fa-check item__favourite__icon"></i>
+                                            <span class="item__favourite__label">Yêu thích</span>
+                                        </div>
+                                        <div class="product__item__sale-off">
+                                            <span class="item__sale-off__percent">10%</span>
+                                            <span class="item__sale-off__label">GIẢM</span>
+                                        </div>
+                                        <div class="product__item__img" style="background-image: url('./assets/img/product/b1ecae4a02c99e4e4ae62021040513593424.jpg')"></div>
+                                        <h4 class="product__item__name">Bộ dưỡng 6 món giảm nếp nhăn ngăn ngừa lão hóa OHUI Age Recovery Essance 3pcs Set</h4>
+                                        <div class="product__item__price">
+                                            <span class="item__price__old">1.200.000đ</span>
+                                            <span class="item__price__current">999.00000đ</span>
+                                        </div>
+                                        <div class="product__item__action">
+                                            <div class="item__action__icon item__action__icon--liked">
+                                                <i class="fas fa-heart item__action--fill"></i>
+                                                <i class="far fa-heart item__action--empty"></i>
+                                            </div>
+                                            <div class="product__item__rate">
+                                                <i class="fas fa-star item__rate--gold"></i>
+                                                <i class="fas fa-star item__rate--gold"></i>
+                                                <i class="fas fa-star item__rate--gold"></i>
+                                                <i class="fas fa-star item__rate--gold"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="product__item__sold">88 đã bán</span>
+                                        </div>
+                                        <div class="product__item__origin">
+                                            <span class="item__origin__brand">Whoo</span>
+                                            <span class="item__origin__nation">Japan</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2_10">
+                                    <a class="product__item" href="">
+                                        <div class="product__item__favourite">
+                                            <i class="fas fa-check item__favourite__icon"></i>
+                                            <span class="item__favourite__label">Yêu thích</span>
+                                        </div>
+                                        <div class="product__item__sale-off">
+                                            <span class="item__sale-off__percent">10%</span>
+                                            <span class="item__sale-off__label">GIẢM</span>
+                                        </div>
+                                        <div class="product__item__img" style="background-image: url('./assets/img/product/b1ecae4a02c99e4e4ae62021040513593424.jpg')"></div>
+                                        <h4 class="product__item__name">Bộ dưỡng 6 món giảm nếp nhăn ngăn ngừa lão hóa OHUI Age Recovery Essance 3pcs Set</h4>
+                                        <div class="product__item__price">
+                                            <span class="item__price__old">1.200.000đ</span>
+                                            <span class="item__price__current">999.00000đ</span>
+                                        </div>
+                                        <div class="product__item__action">
+                                            <div class="item__action__icon item__action__icon--liked">
+                                                <i class="fas fa-heart item__action--fill"></i>
+                                                <i class="far fa-heart item__action--empty"></i>
+                                            </div>
+                                            <div class="product__item__rate">
+                                                <i class="fas fa-star item__rate--gold"></i>
+                                                <i class="fas fa-star item__rate--gold"></i>
+                                                <i class="fas fa-star item__rate--gold"></i>
+                                                <i class="fas fa-star item__rate--gold"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="product__item__sold">88 đã bán</span>
+                                        </div>
+                                        <div class="product__item__origin">
+                                            <span class="item__origin__brand">Whoo</span>
+                                            <span class="item__origin__nation">Japan</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2_10">
+                                    <a class="product__item" href="">
+                                        <div class="product__item__favourite">
+                                            <i class="fas fa-check item__favourite__icon"></i>
+                                            <span class="item__favourite__label">Yêu thích</span>
+                                        </div>
+                                        <div class="product__item__sale-off">
+                                            <span class="item__sale-off__percent">10%</span>
+                                            <span class="item__sale-off__label">GIẢM</span>
+                                        </div>
+                                        <div class="product__item__img" style="background-image: url('./assets/img/product/b1ecae4a02c99e4e4ae62021040513593424.jpg')"></div>
+                                        <h4 class="product__item__name">Bộ dưỡng 6 món giảm nếp nhăn ngăn ngừa lão hóa OHUI Age Recovery Essance 3pcs Set</h4>
+                                        <div class="product__item__price">
+                                            <span class="item__price__old">1.200.000đ</span>
+                                            <span class="item__price__current">999.00000đ</span>
+                                        </div>
+                                        <div class="product__item__action">
+                                            <div class="item__action__icon item__action__icon--liked">
+                                                <i class="fas fa-heart item__action--fill"></i>
+                                                <i class="far fa-heart item__action--empty"></i>
+                                            </div>
+                                            <div class="product__item__rate">
+                                                <i class="fas fa-star item__rate--gold"></i>
+                                                <i class="fas fa-star item__rate--gold"></i>
+                                                <i class="fas fa-star item__rate--gold"></i>
+                                                <i class="fas fa-star item__rate--gold"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="product__item__sold">88 đã bán</span>
+                                        </div>
+                                        <div class="product__item__origin">
+                                            <span class="item__origin__brand">Whoo</span>
+                                            <span class="item__origin__nation">Japan</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2_10">
+                                    <a class="product__item" href="">
+                                        <div class="product__item__favourite">
+                                            <i class="fas fa-check item__favourite__icon"></i>
+                                            <span class="item__favourite__label">Yêu thích</span>
+                                        </div>
+                                        <div class="product__item__sale-off">
+                                            <span class="item__sale-off__percent">10%</span>
+                                            <span class="item__sale-off__label">GIẢM</span>
+                                        </div>
+                                        <div class="product__item__img" style="background-image: url('./assets/img/product/b1ecae4a02c99e4e4ae62021040513593424.jpg')"></div>
+                                        <h4 class="product__item__name">Bộ dưỡng 6 món giảm nếp nhăn ngăn ngừa lão hóa OHUI Age Recovery Essance 3pcs Set</h4>
+                                        <div class="product__item__price">
+                                            <span class="item__price__old">1.200.000đ</span>
+                                            <span class="item__price__current">999.00000đ</span>
+                                        </div>
+                                        <div class="product__item__action">
+                                            <div class="item__action__icon item__action__icon--liked">
+                                                <i class="fas fa-heart item__action--fill"></i>
+                                                <i class="far fa-heart item__action--empty"></i>
+                                            </div>
+                                            <div class="product__item__rate">
+                                                <i class="fas fa-star item__rate--gold"></i>
+                                                <i class="fas fa-star item__rate--gold"></i>
+                                                <i class="fas fa-star item__rate--gold"></i>
+                                                <i class="fas fa-star item__rate--gold"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="product__item__sold">88 đã bán</span>
+                                        </div>
+                                        <div class="product__item__origin">
+                                            <span class="item__origin__brand">Whoo</span>
+                                            <span class="item__origin__nation">Japan</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2_10">
+                                    <a class="product__item" href="">
+                                        <div class="product__item__favourite">
+                                            <i class="fas fa-check item__favourite__icon"></i>
+                                            <span class="item__favourite__label">Yêu thích</span>
+                                        </div>
+                                        <div class="product__item__sale-off">
+                                            <span class="item__sale-off__percent">10%</span>
+                                            <span class="item__sale-off__label">GIẢM</span>
+                                        </div>
+                                        <div class="product__item__img" style="background-image: url('./assets/img/product/b1ecae4a02c99e4e4ae62021040513593424.jpg')"></div>
+                                        <h4 class="product__item__name">Bộ dưỡng 6 món giảm nếp nhăn ngăn ngừa lão hóa OHUI Age Recovery Essance 3pcs Set</h4>
+                                        <div class="product__item__price">
+                                            <span class="item__price__old">1.200.000đ</span>
+                                            <span class="item__price__current">999.00000đ</span>
+                                        </div>
+                                        <div class="product__item__action">
+                                            <div class="item__action__icon item__action__icon--liked">
+                                                <i class="fas fa-heart item__action--fill"></i>
+                                                <i class="far fa-heart item__action--empty"></i>
+                                            </div>
+                                            <div class="product__item__rate">
+                                                <i class="fas fa-star item__rate--gold"></i>
+                                                <i class="fas fa-star item__rate--gold"></i>
+                                                <i class="fas fa-star item__rate--gold"></i>
+                                                <i class="fas fa-star item__rate--gold"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="product__item__sold">88 đã bán</span>
+                                        </div>
+                                        <div class="product__item__origin">
+                                            <span class="item__origin__brand">Whoo</span>
+                                            <span class="item__origin__nation">Japan</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2_10">
+                                    <a class="product__item" href="">
+                                        <div class="product__item__favourite">
+                                            <i class="fas fa-check item__favourite__icon"></i>
+                                            <span class="item__favourite__label">Yêu thích</span>
+                                        </div>
+                                        <div class="product__item__sale-off">
+                                            <span class="item__sale-off__percent">10%</span>
+                                            <span class="item__sale-off__label">GIẢM</span>
+                                        </div>
+                                        <div class="product__item__img" style="background-image: url('./assets/img/product/b1ecae4a02c99e4e4ae62021040513593424.jpg')"></div>
+                                        <h4 class="product__item__name">Bộ dưỡng 6 món giảm nếp nhăn ngăn ngừa lão hóa OHUI Age Recovery Essance 3pcs Set</h4>
+                                        <div class="product__item__price">
+                                            <span class="item__price__old">1.200.000đ</span>
+                                            <span class="item__price__current">999.00000đ</span>
+                                        </div>
+                                        <div class="product__item__action">
+                                            <div class="item__action__icon item__action__icon--liked">
+                                                <i class="fas fa-heart item__action--fill"></i>
+                                                <i class="far fa-heart item__action--empty"></i>
+                                            </div>
+                                            <div class="product__item__rate">
+                                                <i class="fas fa-star item__rate--gold"></i>
+                                                <i class="fas fa-star item__rate--gold"></i>
+                                                <i class="fas fa-star item__rate--gold"></i>
+                                                <i class="fas fa-star item__rate--gold"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="product__item__sold">88 đã bán</span>
+                                        </div>
+                                        <div class="product__item__origin">
+                                            <span class="item__origin__brand">Whoo</span>
+                                            <span class="item__origin__nation">Japan</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2_10">
+                                    <a class="product__item" href="">
+                                        <div class="product__item__favourite">
+                                            <i class="fas fa-check item__favourite__icon"></i>
+                                            <span class="item__favourite__label">Yêu thích</span>
+                                        </div>
+                                        <div class="product__item__sale-off">
+                                            <span class="item__sale-off__percent">10%</span>
+                                            <span class="item__sale-off__label">GIẢM</span>
+                                        </div>
+                                        <div class="product__item__img" style="background-image: url('./assets/img/product/b1ecae4a02c99e4e4ae62021040513593424.jpg')"></div>
+                                        <h4 class="product__item__name">Bộ dưỡng 6 món giảm nếp nhăn ngăn ngừa lão hóa OHUI Age Recovery Essance 3pcs Set</h4>
+                                        <div class="product__item__price">
+                                            <span class="item__price__old">1.200.000đ</span>
+                                            <span class="item__price__current">999.00000đ</span>
+                                        </div>
+                                        <div class="product__item__action">
+                                            <div class="item__action__icon item__action__icon--liked">
+                                                <i class="fas fa-heart item__action--fill"></i>
+                                                <i class="far fa-heart item__action--empty"></i>
+                                            </div>
+                                            <div class="product__item__rate">
+                                                <i class="fas fa-star item__rate--gold"></i>
+                                                <i class="fas fa-star item__rate--gold"></i>
+                                                <i class="fas fa-star item__rate--gold"></i>
+                                                <i class="fas fa-star item__rate--gold"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="product__item__sold">88 đã bán</span>
+                                        </div>
+                                        <div class="product__item__origin">
+                                            <span class="item__origin__brand">Whoo</span>
+                                            <span class="item__origin__nation">Japan</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="pagination pagination--margin">
+                            <li class="pagination__item">
+                                <a href="" class="pagination__link">
+                                    <i class=" pagination__item__icon fas fa-angle-left"></i>
+                                </a>
+                            </li>
+                            <li class="pagination__item">
+                                <div href="" class="pagination__link pagination__link--active">1</div>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="" class="pagination__link">2</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="" class="pagination__link">3</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="" class="pagination__link">4</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="" class="pagination__link">5</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="" class="pagination__link">...</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="" class="pagination__link">14</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="" class="pagination__link">
+                                    <i class=" pagination__item__icon fas fa-angle-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__column-2_10">
+                        <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="" class="item__link">Trung tâm trợ giúp</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="item__link">F8-shop Mall</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="item__link">Hướng dẫn mua hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2_10">
+                        <h3 class="footer__heading">Giới thiệu</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="" class="item__link">Giới thiệu</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="item__link">Tuyển dụng</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="item__link">Điều khoản</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2_10">
+                        <h3 class="footer__heading">Danh mục</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="" class="item__link">Trang điểm mặt</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="item__link">Trang điểm môi</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="item__link">Trang điểm mắt</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2_10">
+                        <h3 class="footer__heading">Theo dõi</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="" class="item__link">
+                                    <i class=" item__link__icon fab fa-facebook"></i> Facebook
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="item__link">
+                                    <i class=" item__link__icon fab fa-instagram"></i> Instagram
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="item__link">
+                                    <i class=" item__link__icon fab fa-linkedin"></i> Linkedin
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2_10">
+                        <h3 class="footer__heading">Vào cửa hàng trên ứng dụng</h3>
+                        <div class="footer__download">
+                            <img src="http://127.0.0.1:5500/assets/img/qr_code.png" alt="" class="footer__dowload__qr">
+                            <div class="footer__download__app">
+                                <a href="" class="download__app__link">
+                                    <img src="http://127.0.0.1:5500/assets/img/google_play.png" alt="" class="download__app__img">
+                                </a>
+                                <a href="" class="download__app__link">
+                                    <img src="http://127.0.0.1:5500/assets/img/app_store.png" alt="" class="download__app__img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <div class="grid">
+                    <p>© 2021 - Bản quyền thuộc về Công ty F8</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- modal layout -->
+    <!-- <div class="modal"> -->
+    <!-- register -->
+    <!-- <div class="modal__container">
+        <div class="modal__header">
+            <h3 class="modal__heading">Đăng ký</h3>
+            <span class="modal__btn">Đăng nhập</span>
+        </div>
+        <div class="modal__body">
+            <div class="modal__body__group">
+                <div class="modal__body__input"><input type="text" class="body__input__getInfo" placeholder=" Nhập số điện thoại "></div>
+                <div class="modal__body__input"><input type="password" class="body__input__getInfo" placeholder=" Mật khẩu "></div>
+                <div class="modal__body__input"><input type="password" class="body__input__getInfo" placeholder=" Nhập lại mật khẩu "></div>
+            </div>
+            <div class="modal__body__aside">
+                <p>Bằng việc đăng kí, bạn đã đồng ý với F8-Shop về
+                    <a href="" class="body__aside__link">điều khoản dịch vụ</a> &
+                    <a href="" class="body__aside__link">chính sách bảo mật</a></p>
+            </div>
+            <div class="modal__body__control">
+                <button class="btn btn--back">Trở lại</button>
+                <button class="btn btn--primary">Đăng kí</button>
+            </div>
+        </div>
+        <div class="modal__footer__socials">
+            <a href="" class="btn btn--with-icon btn--facebook"><i class="fab fa-facebook-square"></i>Kết nối với facebook</a>
+            <a href="" class="btn btn--with-icon btn--google"><i class="fab fa-google"></i>Kết nối với google</a>
+        </div>
+    </div> -->
+    <!-- login -->
+    <!-- <div class="modal__container">
+            <div class="modal__header">
+                <h3 class="modal__heading">Đăng Nhập</h3>
+                <span class="modal__btn">Đăng ký</span>
+            </div>
+            <div class="modal__body">
+                <div class="modal__body__group">
+                    <div class="modal__body__input"><input type="text" class="body__input__getInfo" placeholder=" Nhập số điện thoại "></div>
+                    <div class="modal__body__input"><input type="password" class="body__input__getInfo" placeholder=" Mật khẩu "></div>
+                </div>
+                <div class="modal__body__help">
+                    <a href="" class="body__help__link body__help__link--forget">Quên mật khẩu</a>
+                    <div class="body__help__separate"></div>
+                    <a href="" class="body__help__link">Cần trợ giúp?</a>
+                </div>
+                <div class="modal__body__control">
+                    <button class="btn btn--back">Trở lại</button>
+                    <button class="btn btn--primary">Đăng nhập</button>
+                </div>
+            </div>
+            <div class="modal__footer__socials">
+                <a href="" class="btn btn--with-icon btn--facebook btn--register"><i class="fab fa-facebook-square"></i>Đăng nhập với facebook</a>
+                <a href="" class="btn btn--with-icon btn--google btn--register"><i class="fab fa-google"></i>Đăng nhập với google</a>
+            </div>
+        </div> -->
+    <!-- </div> -->
+    <script type="text/javascript">
+        var version = 1.0;
+    </script>
+
+    <script language="Javascript1.1">
+        version = 1.1;
+    </script>
+    <script language="Javascript1.2">
+        version = 1.2;
+    </script>
+    <script language="Javascript1.3">
+        version = 1.3;
+    </script>
+    <script language="Javascript1.4">
+        version = 1.4;
+    </script>
+    <script language="Javascript1.5">
+        version = 1.5;
+    </script>
+    <script language="Javascript1.6">
+        version = 1.6;
+    </script>
+    <script language="Javascript1.7">
+        version = 1.7;
+    </script>
+    <script language="Javascript1.8">
+        version = 1.8;
+    </script>
+    <script language="Javascript1.9">
+        version = 1.9;
+    </script>
+
+    <script type="text/javascript">
+        alert(version);
+    </script>
+</body>
+
+</html>
